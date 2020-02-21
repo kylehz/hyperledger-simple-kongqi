@@ -9,20 +9,20 @@
 	</head>
 	<body ng-app="application" ng-controller="appController">
 		<div class="form-wrapper">
-			<input type="text" id="search" placeholder="物件编号..." ng-model="query_id" required>
+			<input type="text" id="search" placeholder="编号..." ng-model="query_id" required>
 			<input type="submit" value="搜索" id="submit" ng-click="querySource()">
 		</div>
 		<table cellspacing="0" id="query_source">
 			<tr>
-				<th>物件名称</th>
-				<th>物件规格</th>
-				<th>物件生产日期</th>
-				<th>物件保质期</th>
-				<th>物件批次号</th>
-				<th>物件生产许可证编号</th>
-				<th>物件生产商名称</th>
-				<th>物件生产价格</th>
-				<th>物件生产所在地</th>
+				<th>检测日期</th>
+				<th>PM2.5</th>
+				<th>PM10</th>
+				<th>NO2</th>
+				<th>O3</th>
+				<th>CO</th>
+				<th>Temperature</th>
+				<th>Humidity</th>
+				<th>CO2</th>
 			</tr>
 			<tr>
           			<td>{{query_source.ObjName}}</td>
